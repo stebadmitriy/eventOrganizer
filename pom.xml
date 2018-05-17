@@ -21,6 +21,14 @@
         <!-- Spring -->
         <spring-framework.version>4.2.4.RELEASE</spring-framework.version>
 
+        <!-- JUnit test -->
+        <junit.version>4.12</junit.version>
+
+        <!-- Logging -->
+        <logback.version>1.0.13</logback.version>
+        <slf4j.version>1.7.13</slf4j.version>
+
+        <mySql.version>6.0.5</mySql.version>
     </properties>
 
     <dependencyManagement>
@@ -106,6 +114,39 @@
             <version>1.1.0.Final</version>
         </dependency>
 
+        <!-- Spring JDBC -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Test Artifacts with Spring-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Logging with SLF4J & LogBack -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mySql.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -124,6 +165,15 @@
                 </configuration>
             </plugin>
         </plugins>
+
+        <!--need to find configs in tests in package web-inf like
+        @ContextConfiguration(locations = {"classpath:/config/application-context.xml"
+        -->
+        <testResources>
+            <testResource>
+                <directory>src/main/webapp/WEB-INF/config</directory>
+            </testResource>
+        </testResources>
     </build>
 
 </project>

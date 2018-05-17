@@ -2,17 +2,19 @@ package eventOrganizer.entities;
 
 import java.sql.Timestamp;
 import java.util.Arrays;
+import java.util.Objects;
 
 
 public class Event {
     private int id;
     private String name;
-    private int genreId;
-    private int clientId;
-    private int placeId;
+    private GenreEvent genreEvent;
+    private Client client;
+    private PlaceEvent placeEvent;
+    private Salary salary;
     private Timestamp date;
     private Timestamp timeBegin;
-    private Timestamp timeDuration;
+    private Timestamp timeEnd;
     private String source;
     private byte[] image;
     private String description;
@@ -39,28 +41,36 @@ public class Event {
         this.name = name;
     }
 
-    public int getGenreId() {
-        return genreId;
+    public GenreEvent getGenreEvent() {
+        return genreEvent;
     }
 
-    public void setGenreId(int genreId) {
-        this.genreId = genreId;
+    public void setGenreEvent(GenreEvent genreEvent) {
+        this.genreEvent = genreEvent;
     }
 
-    public int getClientId() {
-        return clientId;
+    public Client getClient() {
+        return client;
     }
 
-    public void setClientId(int clientId) {
-        this.clientId = clientId;
+    public void setClient(Client client) {
+        this.client = client;
     }
 
-    public int getPlaceId() {
-        return placeId;
+    public PlaceEvent getPlaceEvent() {
+        return placeEvent;
     }
 
-    public void setPlaceId(int placeId) {
-        this.placeId = placeId;
+    public void setPlaceEvent(PlaceEvent placeEvent) {
+        this.placeEvent = placeEvent;
+    }
+
+    public Salary getSalary() {
+        return salary;
+    }
+
+    public void setSalary(Salary salary) {
+        this.salary = salary;
     }
 
     public Timestamp getDate() {
@@ -79,12 +89,12 @@ public class Event {
         this.timeBegin = timeBegin;
     }
 
-    public Timestamp getTimeDuration() {
-        return timeDuration;
+    public Timestamp getTimeEnd() {
+        return timeEnd;
     }
 
-    public void setTimeDuration(Timestamp timeDuration) {
-        this.timeDuration = timeDuration;
+    public void setTimeEnd(Timestamp timeEnd) {
+        this.timeEnd = timeEnd;
     }
 
     public String getSource() {
@@ -139,42 +149,28 @@ public class Event {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-
         Event event = (Event) o;
-
-        if (id != event.id) return false;
-        if (genreId != event.genreId) return false;
-        if (clientId != event.clientId) return false;
-        if (placeId != event.placeId) return false;
-        if (name != null ? !name.equals(event.name) : event.name != null) return false;
-        if (date != null ? !date.equals(event.date) : event.date != null) return false;
-        if (timeBegin != null ? !timeBegin.equals(event.timeBegin) : event.timeBegin != null) return false;
-        if (timeDuration != null ? !timeDuration.equals(event.timeDuration) : event.timeDuration != null) return false;
-        if (source != null ? !source.equals(event.source) : event.source != null) return false;
-        if (!Arrays.equals(image, event.image)) return false;
-        if (description != null ? !description.equals(event.description) : event.description != null) return false;
-        if (rating != null ? !rating.equals(event.rating) : event.rating != null) return false;
-        if (voteCount != null ? !voteCount.equals(event.voteCount) : event.voteCount != null) return false;
-        if (!Arrays.equals(content, event.content)) return false;
-
-        return true;
+        return id == event.id &&
+                Objects.equals(name, event.name) &&
+                Objects.equals(genreEvent, event.genreEvent) &&
+                Objects.equals(client, event.client) &&
+                Objects.equals(placeEvent, event.placeEvent) &&
+                Objects.equals(date, event.date) &&
+                Objects.equals(timeBegin, event.timeBegin) &&
+                Objects.equals(timeEnd, event.timeEnd) &&
+                Objects.equals(source, event.source) &&
+                Arrays.equals(image, event.image) &&
+                Objects.equals(description, event.description) &&
+                Objects.equals(rating, event.rating) &&
+                Objects.equals(voteCount, event.voteCount) &&
+                Arrays.equals(content, event.content);
     }
 
     @Override
     public int hashCode() {
-        int result = id;
-        result = 31 * result + (name != null ? name.hashCode() : 0);
-        result = 31 * result + genreId;
-        result = 31 * result + clientId;
-        result = 31 * result + placeId;
-        result = 31 * result + (date != null ? date.hashCode() : 0);
-        result = 31 * result + (timeBegin != null ? timeBegin.hashCode() : 0);
-        result = 31 * result + (timeDuration != null ? timeDuration.hashCode() : 0);
-        result = 31 * result + (source != null ? source.hashCode() : 0);
+
+        int result = Objects.hash(id, name, genreEvent, client, placeEvent, date, timeBegin, timeEnd, source, description, rating, voteCount);
         result = 31 * result + Arrays.hashCode(image);
-        result = 31 * result + (description != null ? description.hashCode() : 0);
-        result = 31 * result + (rating != null ? rating.hashCode() : 0);
-        result = 31 * result + (voteCount != null ? voteCount.hashCode() : 0);
         result = 31 * result + Arrays.hashCode(content);
         return result;
     }
