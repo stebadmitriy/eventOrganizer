@@ -7,27 +7,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d946308-0e72-4dd1-9388-c6fe473fbdc5" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_6_0_5.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eventOrganizer/controllers/files/ListController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eventOrganizer/dao/EventService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eventOrganizer/dao/EventServiceDAO.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eventOrganizer/entities/Salary.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/util.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_4.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_mail_1_4_7.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_velocity_velocity_1_7.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_2_4_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eventOrganizer/controllers/mail/EmailController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eventOrganizer/dao/EmailService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eventOrganizer/dao/EmailServiceDAO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eventOrganizer/entities/mail/EmailModel.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/email-templates/registered.vm" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/version_4_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/version_4_war.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/eventOrganizer/entities/Client.java" afterPath="$PROJECT_DIR$/src/main/java/eventOrganizer/entities/Client.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/eventOrganizer/entities/Event.java" afterPath="$PROJECT_DIR$/src/main/java/eventOrganizer/entities/Event.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eventOrganizer/controllers/files/ListController.java" afterPath="$PROJECT_DIR$/src/main/java/eventOrganizer/controllers/files/ListController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eventOrganizer/dao/EventService.java" afterPath="$PROJECT_DIR$/src/main/java/eventOrganizer/dao/EventService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eventOrganizer/dao/EventServiceDAO.java" afterPath="$PROJECT_DIR$/src/main/java/eventOrganizer/dao/EventServiceDAO.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eventOrganizer/entities/Client.java" afterPath="$PROJECT_DIR$/src/main/java/eventOrganizer/entities/event/Client.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eventOrganizer/entities/Event.java" afterPath="$PROJECT_DIR$/src/main/java/eventOrganizer/entities/event/Event.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eventOrganizer/entities/GenreEvent.java" afterPath="$PROJECT_DIR$/src/main/java/eventOrganizer/entities/event/GenreEvent.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eventOrganizer/entities/PlaceEvent.java" afterPath="$PROJECT_DIR$/src/main/java/eventOrganizer/entities/event/PlaceEvent.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eventOrganizer/entities/Salary.java" afterPath="$PROJECT_DIR$/src/main/java/eventOrganizer/entities/event/Salary.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eventOrganizer/entities/User.java" afterPath="$PROJECT_DIR$/src/main/java/eventOrganizer/entities/event/User.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/util.properties" afterPath="$PROJECT_DIR$/src/main/resources/util.properties" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/application-context.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/application-context.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/error/errorpage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/error/errorpage.jsp" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/classes/eventOrganizer/entities/Event.class" afterPath="$PROJECT_DIR$/target/classes/eventOrganizer/entities/Event.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eventOrganizer/entities/Client.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eventOrganizer/entities/Event.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eventOrganizer/entities/GenreEvent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eventOrganizer/entities/PlaceEvent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eventOrganizer/entities/User.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT.war" />
-      <change beforePath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
-      <change beforePath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/WEB-INF/classes/eventOrganizer/entities/Event.class" afterPath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/WEB-INF/classes/eventOrganizer/entities/Event.class" />
+      <change beforePath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/WEB-INF/classes/eventOrganizer/entities/Client.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/WEB-INF/classes/eventOrganizer/entities/Event.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/WEB-INF/classes/eventOrganizer/entities/GenreEvent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/WEB-INF/classes/eventOrganizer/entities/PlaceEvent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/WEB-INF/classes/eventOrganizer/entities/User.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/WEB-INF/config/application-context.xml" afterPath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/WEB-INF/config/application-context.xml" />
-      <change beforePath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/WEB-INF/view/error/errorpage.jsp" afterPath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/WEB-INF/view/error/errorpage.jsp" />
       <change beforePath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/WEB-INF/view/index.jsp" afterPath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/WEB-INF/view/index.jsp" />
       <change beforePath="$PROJECT_DIR$/version_4.iml" afterPath="$PROJECT_DIR$/version_4.iml" />
     </list>
@@ -49,31 +66,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="681" column="65" lean-forward="false" selection-start-line="681" selection-start-column="65" selection-end-line="681" selection-end-column="65" />
+            <state relative-caret-position="194">
+              <caret line="746" column="73" lean-forward="false" selection-start-line="746" selection-start-column="73" selection-end-line="746" selection-end-column="73" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fmt.tld" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/jstl/1.2/jstl-1.2.jar!/META-INF/fmt.tld">
+      <file leaf-file-name="util.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/util.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="514" column="34" lean-forward="true" selection-start-line="514" selection-start-column="34" selection-end-line="514" selection-end-column="34" />
+            <state relative-caret-position="352">
+              <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ListController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/eventOrganizer/controllers/files/ListController.java">
+      <file leaf-file-name="application-context.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/application-context.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="286">
+              <caret line="46" column="59" lean-forward="false" selection-start-line="46" selection-start-column="59" selection-end-line="46" selection-end-column="59" />
+              <folding>
+                <element signature="n#prop#4;n#props#0;n#property#3;n#bean#1;n#beans#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmailService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/eventOrganizer/dao/EmailService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="590">
+              <caret line="62" column="53" lean-forward="false" selection-start-line="62" selection-start-column="53" selection-end-line="62" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,88 +110,119 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EventServiceDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/eventOrganizer/dao/EventServiceDAO.java">
+      <file leaf-file-name="registered.vm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/email-templates/registered.vm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="8" column="11" lean-forward="false" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+            <state relative-caret-position="462">
+              <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Event.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/eventOrganizer/entities/Event.java">
+      <file leaf-file-name="MimeMessageHelper.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context-support/4.2.4.RELEASE/spring-context-support-4.2.4.RELEASE.jar!/org/springframework/mail/javamail/MimeMessageHelper.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1254">
-              <caret line="67" column="31" lean-forward="false" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
+            <state relative-caret-position="202">
+              <caret line="399" column="47" lean-forward="false" selection-start-line="399" selection-start-column="47" selection-end-line="399" selection-end-column="47" />
               <folding>
-                <element signature="e#876#877#0" expanded="true" />
-                <element signature="e#909#910#0" expanded="true" />
-                <element signature="e#965#966#0" expanded="true" />
-                <element signature="e#1009#1010#0" expanded="true" />
-                <element signature="e#1042#1043#0" expanded="true" />
-                <element signature="e#1071#1072#0" expanded="true" />
-                <element signature="e#1115#1116#0" expanded="true" />
-                <element signature="e#1151#1152#0" expanded="true" />
-                <element signature="e#1192#1193#0" expanded="true" />
-                <element signature="e#1225#1226#0" expanded="true" />
-                <element signature="e#1281#1282#0" expanded="true" />
-                <element signature="e#1325#1326#0" expanded="true" />
-                <element signature="e#1387#1388#0" expanded="true" />
-                <element signature="e#1431#1432#0" expanded="true" />
-                <element signature="e#1467#1468#0" expanded="true" />
+                <marker date="1526559017073" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1526559017073" expanded="false" signature="157:1008" ph="..." />
+                <marker date="1526559017073" expanded="false" signature="2126:2137" ph=" { " />
+                <marker date="1526559017073" expanded="false" signature="2169:2175" ph=" }" />
+                <marker date="1526559017073" expanded="true" signature="2248:2495" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="2596:2655" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="2773:2836" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="2937:3000" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="3118:3428" ph="{...}" />
+                <marker date="1526559017073" expanded="false" signature="3475:3486" ph=" { " />
+                <marker date="1526559017073" expanded="false" signature="3510:3516" ph=" }" />
+                <marker date="1526559017073" expanded="true" signature="3628:4897" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="4982:5063" ph="{...}" />
+                <marker date="1526559017073" expanded="false" signature="5103:5114" ph=" { " />
+                <marker date="1526559017073" expanded="false" signature="5152:5158" ph=" }" />
+                <marker date="1526559017073" expanded="true" signature="5223:5511" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="5596:5673" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="5754:5827" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="5894:6019" ph="{...}" />
+                <marker date="1526559017073" expanded="false" signature="6052:6063" ph=" { " />
+                <marker date="1526559017073" expanded="false" signature="6084:6090" ph=" }" />
+                <marker date="1526559017073" expanded="true" signature="6165:6577" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="6635:6756" ph="{...}" />
+                <marker date="1526559017073" expanded="false" signature="6797:6808" ph=" { " />
+                <marker date="1526559017073" expanded="false" signature="6832:6838" ph=" }" />
+                <marker date="1526559017073" expanded="false" signature="6903:6914" ph=" { " />
+                <marker date="1526559017073" expanded="false" signature="6957:6963" ph=" }" />
+                <marker date="1526559017073" expanded="false" signature="7005:7016" ph=" { " />
+                <marker date="1526559017073" expanded="false" signature="7046:7052" ph=" }" />
+                <marker date="1526559017073" expanded="true" signature="7138:7230" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="7322:7564" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="7638:7784" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="7849:7966" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="8078:8294" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="8374:8559" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="8630:8760" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="8878:9167" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="9237:9398" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="9470:9640" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="9701:9810" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="9873:10156" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="10226:10387" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="10448:10557" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="10665:10871" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="10941:11102" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="11174:11344" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="11405:11514" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="11577:11860" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="11930:12091" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="12152:12261" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="12369:12575" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="12647:12813" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="12887:13062" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="13125:13238" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="13303:13592" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="13664:13830" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="13893:14006" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="14116:14327" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="14412:15001" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="15071:15156" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="15227:15346" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="15417:15675" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="15740:15782" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="15861:16280" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="16367:16977" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="17044:17601" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="17701:17870" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="17969:18180" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="18275:18712" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="18795:19036" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="19127:19346" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="19475:20033" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="20141:20800" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="20896:21150" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="21272:21446" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="21588:22169" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="22301:22838" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="22335:22831" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="22404:22478" ph="{...}" />
+                <marker date="1526559017073" expanded="true" signature="22530:22643" ph="{...}" />
+                <marker date="1526559017073" expanded="false" signature="22687:22706" ph=" { " />
+                <marker date="1526559017073" expanded="false" signature="22725:22739" ph=" }" />
+                <marker date="1526559017073" expanded="false" signature="22776:22795" ph=" { " />
+                <marker date="1526559017073" expanded="false" signature="22807:22821" ph=" }" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Salary.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/eventOrganizer/entities/Salary.java">
+      <file leaf-file-name="EmailController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/eventOrganizer/controllers/mail/EmailController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-              <folding>
-                <element signature="e#269#270#0" expanded="true" />
-                <element signature="e#320#321#0" expanded="true" />
-                <element signature="e#366#367#0" expanded="true" />
-                <element signature="e#400#401#0" expanded="true" />
-                <element signature="e#433#434#0" expanded="true" />
-                <element signature="e#482#483#0" expanded="true" />
-                <element signature="e#526#527#0" expanded="true" />
-                <element signature="e#564#565#0" expanded="true" />
-                <element signature="e#601#602#0" expanded="true" />
-                <element signature="e#658#659#0" expanded="true" />
-                <element signature="e#710#711#0" expanded="true" />
-                <element signature="e#746#747#0" expanded="true" />
-                <element signature="e#781#782#0" expanded="true" />
-                <element signature="e#834#835#0" expanded="true" />
-                <element signature="e#882#883#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/eventOrganizer/entities/Client.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="71" column="37" lean-forward="false" selection-start-line="71" selection-start-column="37" selection-end-line="71" selection-end-column="37" />
+            <state relative-caret-position="276">
+              <caret line="29" column="12" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1303#1304#0" expanded="true" />
-                <element signature="e#1347#1348#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GenreEvent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/eventOrganizer/entities/GenreEvent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -170,24 +230,38 @@
       <file leaf-file-name="EventService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/eventOrganizer/dao/EventService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
+            <state relative-caret-position="563">
               <caret line="57" column="44" lean-forward="false" selection-start-line="57" selection-start-column="44" selection-end-line="57" selection-end-column="44" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#604#605#0" expanded="true" />
-                <element signature="e#659#660#0" expanded="true" />
-                <marker date="1526558695989" expanded="true" signature="747:1257" ph="SELECT e.id,... EVENT" />
+                <marker date="1526559364214" expanded="true" signature="753:1263" ph="SELECT e.id,... EVENT" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="excel-pdf-config.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/excel-pdf-config.xml">
+      <file leaf-file-name="EmailServiceDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/eventOrganizer/dao/EmailServiceDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="73" lean-forward="false" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
+            <state relative-caret-position="154">
+              <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmailModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/eventOrganizer/entities/mail/EmailModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="704">
+              <caret line="42" column="18" lean-forward="false" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+              <folding>
+                <element signature="e#205#206#0" expanded="true" />
+                <element signature="e#232#233#0" expanded="true" />
+                <element signature="e#478#479#0" expanded="true" />
+                <element signature="e#512#513#0" expanded="true" />
+                <element signature="e#566#567#0" expanded="true" />
+                <element signature="e#612#613#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -218,6 +292,12 @@
       <find>timeDuration</find>
       <find>sourc</find>
       <find>timed</find>
+      <find>send</find>
+      <find>Updated yesterday at</find>
+      <find>Contact Details</find>
+      <find>3481 Melrose Place</find>
+      <find>emailModel</find>
+      <find>urljavastudy</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -248,21 +328,27 @@
         <option value="$PROJECT_DIR$/src/main/java/eventOrganizer/entities/GenreEvent.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/template.tag" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/jquery/jquery-3.3.1.min.js" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/application-context.xml" />
         <option value="$PROJECT_DIR$/src/main/java/eventOrganizer/dao/ListService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/eventOrganizer/dao/EventServiceDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/eventOrganizer/dao/mapper/EventRowMapper.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/error/errorpage.jsp" />
         <option value="$PROJECT_DIR$/../Dump20180513/eventorganizer_event.sql" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/mvc-config.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/util.properties" />
         <option value="$PROJECT_DIR$/src/main/java/eventOrganizer/entities/Salary.java" />
         <option value="$PROJECT_DIR$/src/main/java/eventOrganizer/controllers/files/ListController.java" />
         <option value="$PROJECT_DIR$/src/main/java/eventOrganizer/entities/Event.java" />
         <option value="$PROJECT_DIR$/src/main/java/eventOrganizer/entities/Client.java" />
         <option value="$PROJECT_DIR$/src/main/java/eventOrganizer/dao/EventService.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/eventOrganizer/entities/event/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eventOrganizer/dao/EventServiceDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eventOrganizer/dao/EmailServiceDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/mvc-config.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/application-context.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/util.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/eventOrganizer/entities/mail/EmailModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eventOrganizer/dao/EmailService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eventOrganizer/controllers/mail/EmailController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/email-templates/registered.vm" />
       </list>
     </option>
   </component>
@@ -376,7 +462,27 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="eventOrganizer" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eventOrganizer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="version_7" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="eventOrganizer" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
               <item name="files" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eventOrganizer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="version_7" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="eventOrganizer" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="mail" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="eventOrganizer" type="b2602c69:ProjectViewProjectNode" />
@@ -395,6 +501,26 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="eventOrganizer" type="462c0819:PsiDirectoryNode" />
               <item name="entities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eventOrganizer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="version_7" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="eventOrganizer" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
+              <item name="event" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eventOrganizer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="version_7" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="eventOrganizer" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
+              <item name="mail" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="eventOrganizer" type="b2602c69:ProjectViewProjectNode" />
@@ -434,6 +560,15 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eventOrganizer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="version_7" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="email-templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="eventOrganizer" type="b2602c69:ProjectViewProjectNode" />
@@ -487,26 +622,26 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15362035" />
     <property name="project.structure.side.proportion" value="0.2520661" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../!!!/EPAM_Training/web-project/alfa/version_32" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/4. Email with Spring MVC" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Steba\Java\Spring\!EventOrganizer\version_7\src\main\webapp\WEB-INF" />
+      <recent name="S:\Java\Spring\!EventOrganizer\version_4\src\main\java\eventOrganizer" />
+      <recent name="S:\Java\Spring\!EventOrganizer\version_4\src\main\webapp\WEB-INF\view" />
+      <recent name="S:\Java\Spring\!EventOrganizer\version_4\src\main\webapp\WEB-INF" />
+      <recent name="S:\Java\Spring\!EventOrganizer\version_4\src\main\webapp" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="eventOrganizer.beans.files" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="S:\Java\Spring\!EventOrganizer\version_6\src\main\webapp\resources\bootstrap" />
       <recent name="S:\Java\Spring\!EventOrganizer\version_4\src\main" />
       <recent name="S:\Java\Spring\!EventOrganizer\version_4\webapp\WEB-INF\view" />
       <recent name="S:\Java\Spring\!EventOrganizer\version_4\src\main\java" />
       <recent name="S:\Java\Spring\!EventOrganizer\version_4\src\main\eventOrganizer" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="eventOrganizer.beans.files" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="S:\Java\Spring\!EventOrganizer\version_4\src\main\java\eventOrganizer" />
-      <recent name="S:\Java\Spring\!EventOrganizer\version_4\src\main\webapp\WEB-INF\view" />
-      <recent name="S:\Java\Spring\!EventOrganizer\version_4\src\main\webapp\WEB-INF" />
-      <recent name="S:\Java\Spring\!EventOrganizer\version_4\src\main\webapp" />
-      <recent name="S:\Java\Spring\!EventOrganizer\version_4\src\main\webapp\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -703,12 +838,20 @@
       <workItem from="1526463279520" duration="863000" />
       <workItem from="1526464392729" duration="603000" />
       <workItem from="1526467946162" duration="11354000" />
-      <workItem from="1526538328494" duration="7356000" />
+      <workItem from="1526538328494" duration="15847000" />
     </task>
+    <task id="LOCAL-00001" summary="Adding JDBC functional">
+      <created>1526558944669</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1526558944669</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52335000" />
+    <option name="totallyTimeSpent" value="60826000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -738,7 +881,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16044776" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -757,74 +900,15 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adding JDBC functional" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding JDBC functional" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2075">
-          <caret line="83" column="28" lean-forward="false" selection-start-line="83" selection-start-column="28" selection-end-line="83" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="46" lean-forward="false" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="775">
-          <caret line="31" column="21" lean-forward="false" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/about/about.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6850">
-          <caret line="274" column="19" lean-forward="false" selection-start-line="274" selection-start-column="19" selection-end-line="274" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/startbootstrap-modern-business-1.0.5/startbootstrap-modern-business-1.0.5/index.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/application-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="61" lean-forward="false" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/mvc-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2150">
-          <caret line="86" column="18" lean-forward="false" selection-start-line="86" selection-start-column="18" selection-end-line="86" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -889,22 +973,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eventOrganizer/entities/PlaceEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eventOrganizer/entities/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/template.tag">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1276">
@@ -937,27 +1005,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/bootstrap/jquery/jquery.min.js" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-876">
-          <caret line="119" column="35" lean-forward="false" selection-start-line="119" selection-start-column="24" selection-end-line="119" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/eventOrganizer/dao/mapper/EventRowMapper.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.2.4.RELEASE/spring-jdbc-4.2.4.RELEASE.jar!/org/springframework/jdbc/core/JdbcTemplate.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4290">
           <caret line="262" column="23" lean-forward="false" selection-start-line="262" selection-start-column="23" selection-end-line="262" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="60" column="21" lean-forward="false" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -984,30 +1036,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/application-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="34" column="8" lean-forward="false" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/mvc-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="23" column="40" lean-forward="false" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/util.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="159" lean-forward="false" selection-start-line="4" selection-start-column="159" selection-end-line="4" selection-end-column="159" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/excel-pdf-config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -1016,118 +1044,352 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eventOrganizer/entities/GenreEvent.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/jstl/1.2/jstl-1.2.jar!/META-INF/fmt.tld">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
+        <state relative-caret-position="422">
+          <caret line="514" column="34" lean-forward="false" selection-start-line="514" selection-start-column="34" selection-end-line="514" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="166" column="21" lean-forward="false" selection-start-line="166" selection-start-column="21" selection-end-line="166" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context-support/4.2.4.RELEASE/spring-context-support-4.2.4.RELEASE.jar!/org/springframework/ui/velocity/VelocityEngineFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="53" column="16" lean-forward="false" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="60" column="21" lean-forward="false" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eventOrganizer/entities/event/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1309#1310#0" expanded="false" />
+            <element signature="e#1353#1354#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eventOrganizer/entities/event/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="e#882#883#0" expanded="false" />
+            <element signature="e#915#916#0" expanded="false" />
+            <element signature="e#971#972#0" expanded="false" />
+            <element signature="e#1015#1016#0" expanded="false" />
+            <element signature="e#1048#1049#0" expanded="false" />
+            <element signature="e#1077#1078#0" expanded="false" />
+            <element signature="e#1121#1122#0" expanded="false" />
+            <element signature="e#1157#1158#0" expanded="false" />
+            <element signature="e#1198#1199#0" expanded="false" />
+            <element signature="e#1231#1232#0" expanded="false" />
+            <element signature="e#1287#1288#0" expanded="false" />
+            <element signature="e#1331#1332#0" expanded="false" />
+            <element signature="e#1364#1365#0" expanded="false" />
+            <element signature="e#1393#1394#0" expanded="false" />
+            <element signature="e#1437#1438#0" expanded="false" />
+            <element signature="e#1473#1474#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eventOrganizer/entities/event/GenreEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eventOrganizer/entities/Salary.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/eventOrganizer/entities/event/PlaceEvent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        <state relative-caret-position="-7">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eventOrganizer/entities/event/Salary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding>
-            <element signature="e#269#270#0" expanded="true" />
-            <element signature="e#320#321#0" expanded="true" />
-            <element signature="e#366#367#0" expanded="true" />
-            <element signature="e#400#401#0" expanded="true" />
-            <element signature="e#433#434#0" expanded="true" />
-            <element signature="e#482#483#0" expanded="true" />
-            <element signature="e#526#527#0" expanded="true" />
-            <element signature="e#564#565#0" expanded="true" />
-            <element signature="e#601#602#0" expanded="true" />
-            <element signature="e#658#659#0" expanded="true" />
-            <element signature="e#710#711#0" expanded="true" />
-            <element signature="e#746#747#0" expanded="true" />
-            <element signature="e#781#782#0" expanded="true" />
-            <element signature="e#834#835#0" expanded="true" />
-            <element signature="e#882#883#0" expanded="true" />
+            <element signature="e#241#242#0" expanded="false" />
+            <element signature="e#275#276#0" expanded="false" />
+            <element signature="e#326#327#0" expanded="false" />
+            <element signature="e#372#373#0" expanded="false" />
+            <element signature="e#406#407#0" expanded="false" />
+            <element signature="e#439#440#0" expanded="false" />
+            <element signature="e#488#489#0" expanded="false" />
+            <element signature="e#532#533#0" expanded="false" />
+            <element signature="e#570#571#0" expanded="false" />
+            <element signature="e#607#608#0" expanded="false" />
+            <element signature="e#664#665#0" expanded="false" />
+            <element signature="e#716#717#0" expanded="false" />
+            <element signature="e#752#753#0" expanded="false" />
+            <element signature="e#787#788#0" expanded="false" />
+            <element signature="e#840#841#0" expanded="false" />
+            <element signature="e#888#889#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eventOrganizer/entities/event/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/eventOrganizer/dao/EventServiceDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="8" column="11" lean-forward="false" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        <state relative-caret-position="66">
+          <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eventOrganizer/controllers/files/mail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context-support/4.2.4.RELEASE/spring-context-support-4.2.4.RELEASE.jar!/org/springframework/ui/velocity/VelocityEngineFactoryBean.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <marker date="1526559017073" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1526559017073" expanded="false" signature="155:447" ph="..." />
+            <marker date="1526559017073" expanded="true" signature="681:688" ph="{}" />
+            <marker date="1526559017073" expanded="true" signature="765:831" ph="{...}" />
+            <marker date="1526559017073" expanded="false" signature="870:881" ph=" { " />
+            <marker date="1526559017073" expanded="false" signature="908:914" ph=" }" />
+            <marker date="1526559017073" expanded="false" signature="974:985" ph=" { " />
+            <marker date="1526559017073" expanded="false" signature="1013:1019" ph=" }" />
+            <marker date="1526559017073" expanded="false" signature="1053:1064" ph=" { " />
+            <marker date="1526559017073" expanded="false" signature="1076:1082" ph=" }" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/eventOrganizer/controllers/files/ListController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
+        <state relative-caret-position="286">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/mvc-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/application-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="46" column="59" lean-forward="false" selection-start-line="46" selection-start-column="59" selection-end-line="46" selection-end-column="59" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="n#prop#4;n#props#0;n#property#3;n#bean#1;n#beans#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eventOrganizer/entities/Event.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/util.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1254">
-          <caret line="67" column="31" lean-forward="false" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
-          <folding>
-            <element signature="e#876#877#0" expanded="true" />
-            <element signature="e#909#910#0" expanded="true" />
-            <element signature="e#965#966#0" expanded="true" />
-            <element signature="e#1009#1010#0" expanded="true" />
-            <element signature="e#1042#1043#0" expanded="true" />
-            <element signature="e#1071#1072#0" expanded="true" />
-            <element signature="e#1115#1116#0" expanded="true" />
-            <element signature="e#1151#1152#0" expanded="true" />
-            <element signature="e#1192#1193#0" expanded="true" />
-            <element signature="e#1225#1226#0" expanded="true" />
-            <element signature="e#1281#1282#0" expanded="true" />
-            <element signature="e#1325#1326#0" expanded="true" />
-            <element signature="e#1387#1388#0" expanded="true" />
-            <element signature="e#1431#1432#0" expanded="true" />
-            <element signature="e#1467#1468#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eventOrganizer/entities/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="71" column="37" lean-forward="false" selection-start-line="71" selection-start-column="37" selection-end-line="71" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1303#1304#0" expanded="true" />
-            <element signature="e#1347#1348#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eventOrganizer/dao/EventService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="57" column="44" lean-forward="false" selection-start-line="57" selection-start-column="44" selection-end-line="57" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#604#605#0" expanded="true" />
-            <element signature="e#659#660#0" expanded="true" />
-            <marker date="1526558695989" expanded="true" signature="747:1257" ph="SELECT e.id,... EVENT" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/jstl/1.2/jstl-1.2.jar!/META-INF/fmt.tld">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="514" column="34" lean-forward="true" selection-start-line="514" selection-start-column="34" selection-end-line="514" selection-end-column="34" />
+        <state relative-caret-position="352">
+          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="681" column="65" lean-forward="false" selection-start-line="681" selection-start-column="65" selection-end-line="681" selection-end-column="65" />
+        <state relative-caret-position="194">
+          <caret line="746" column="73" lean-forward="false" selection-start-line="746" selection-start-column="73" selection-end-line="746" selection-end-column="73" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context-support/4.2.4.RELEASE/spring-context-support-4.2.4.RELEASE.jar!/org/springframework/mail/javamail/MimeMessageHelper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="399" column="47" lean-forward="false" selection-start-line="399" selection-start-column="47" selection-end-line="399" selection-end-column="47" />
+          <folding>
+            <marker date="1526559017073" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1526559017073" expanded="false" signature="157:1008" ph="..." />
+            <marker date="1526559017073" expanded="false" signature="2126:2137" ph=" { " />
+            <marker date="1526559017073" expanded="false" signature="2169:2175" ph=" }" />
+            <marker date="1526559017073" expanded="true" signature="2248:2495" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="2596:2655" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="2773:2836" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="2937:3000" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="3118:3428" ph="{...}" />
+            <marker date="1526559017073" expanded="false" signature="3475:3486" ph=" { " />
+            <marker date="1526559017073" expanded="false" signature="3510:3516" ph=" }" />
+            <marker date="1526559017073" expanded="true" signature="3628:4897" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="4982:5063" ph="{...}" />
+            <marker date="1526559017073" expanded="false" signature="5103:5114" ph=" { " />
+            <marker date="1526559017073" expanded="false" signature="5152:5158" ph=" }" />
+            <marker date="1526559017073" expanded="true" signature="5223:5511" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="5596:5673" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="5754:5827" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="5894:6019" ph="{...}" />
+            <marker date="1526559017073" expanded="false" signature="6052:6063" ph=" { " />
+            <marker date="1526559017073" expanded="false" signature="6084:6090" ph=" }" />
+            <marker date="1526559017073" expanded="true" signature="6165:6577" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="6635:6756" ph="{...}" />
+            <marker date="1526559017073" expanded="false" signature="6797:6808" ph=" { " />
+            <marker date="1526559017073" expanded="false" signature="6832:6838" ph=" }" />
+            <marker date="1526559017073" expanded="false" signature="6903:6914" ph=" { " />
+            <marker date="1526559017073" expanded="false" signature="6957:6963" ph=" }" />
+            <marker date="1526559017073" expanded="false" signature="7005:7016" ph=" { " />
+            <marker date="1526559017073" expanded="false" signature="7046:7052" ph=" }" />
+            <marker date="1526559017073" expanded="true" signature="7138:7230" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="7322:7564" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="7638:7784" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="7849:7966" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="8078:8294" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="8374:8559" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="8630:8760" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="8878:9167" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="9237:9398" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="9470:9640" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="9701:9810" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="9873:10156" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="10226:10387" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="10448:10557" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="10665:10871" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="10941:11102" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="11174:11344" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="11405:11514" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="11577:11860" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="11930:12091" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="12152:12261" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="12369:12575" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="12647:12813" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="12887:13062" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="13125:13238" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="13303:13592" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="13664:13830" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="13893:14006" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="14116:14327" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="14412:15001" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="15071:15156" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="15227:15346" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="15417:15675" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="15740:15782" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="15861:16280" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="16367:16977" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="17044:17601" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="17701:17870" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="17969:18180" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="18275:18712" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="18795:19036" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="19127:19346" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="19475:20033" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="20141:20800" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="20896:21150" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="21272:21446" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="21588:22169" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="22301:22838" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="22335:22831" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="22404:22478" ph="{...}" />
+            <marker date="1526559017073" expanded="true" signature="22530:22643" ph="{...}" />
+            <marker date="1526559017073" expanded="false" signature="22687:22706" ph=" { " />
+            <marker date="1526559017073" expanded="false" signature="22725:22739" ph=" }" />
+            <marker date="1526559017073" expanded="false" signature="22776:22795" ph=" { " />
+            <marker date="1526559017073" expanded="false" signature="22807:22821" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eventOrganizer/dao/EventService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="57" column="44" lean-forward="false" selection-start-line="57" selection-start-column="44" selection-end-line="57" selection-end-column="44" />
+          <folding>
+            <marker date="1526559364214" expanded="true" signature="753:1263" ph="SELECT e.id,... EVENT" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eventOrganizer/entities/mail/EmailModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="42" column="18" lean-forward="false" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+          <folding>
+            <element signature="e#205#206#0" expanded="true" />
+            <element signature="e#232#233#0" expanded="true" />
+            <element signature="e#478#479#0" expanded="true" />
+            <element signature="e#512#513#0" expanded="true" />
+            <element signature="e#566#567#0" expanded="true" />
+            <element signature="e#612#613#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/email-templates/registered.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eventOrganizer/dao/EmailServiceDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eventOrganizer/dao/EmailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="62" column="53" lean-forward="false" selection-start-line="62" selection-start-column="53" selection-end-line="62" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eventOrganizer/controllers/mail/EmailController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="29" column="12" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

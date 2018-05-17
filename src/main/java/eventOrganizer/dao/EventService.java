@@ -1,6 +1,6 @@
 package eventOrganizer.dao;
 
-import eventOrganizer.entities.*;
+import eventOrganizer.entities.event.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
