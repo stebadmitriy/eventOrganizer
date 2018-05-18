@@ -749,7 +749,7 @@ var Carousel = function ($$$1) {
           // part of the mouse compatibility events on first tap - the carousel
           // would stop cycling until user tapped out of it;
           // here, we listen for touchend, explicitly pause the carousel
-          // (as if it's the second time we tap on it, mouseenter compat event
+          // (as if it's the second time we tap on it, mouseenter compat eventService
           // is NOT fired) and after a timeout (to allow for mouse compatibility
           // events to fire) we explicitly restart cycling
           $$$1(this._element).on(Event.TOUCHEND, function () {
@@ -1551,7 +1551,7 @@ var Dropdown = function ($$$1) {
         this._popper = new Popper(element, this._menu, this._getPopperConfig());
       } // If this is a touch-enabled device we add extra
       // empty mouseover listeners to the body's immediate children;
-      // only needed because of broken event delegation on iOS
+      // only needed because of broken eventService delegation on iOS
       // https://www.quirksmode.org/blog/archives/2014/02/mouse_event_bub.html
 
 
@@ -2696,7 +2696,7 @@ var Tooltip = function ($$$1) {
         });
         $$$1(tip).addClass(ClassName.SHOW); // If this is a touch-enabled device we add extra
         // empty mouseover listeners to the body's immediate children;
-        // only needed because of broken event delegation on iOS
+        // only needed because of broken eventService delegation on iOS
         // https://www.quirksmode.org/blog/archives/2014/02/mouse_event_bub.html
 
         if ('ontouchstart' in document.documentElement) {

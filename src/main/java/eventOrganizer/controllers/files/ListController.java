@@ -1,6 +1,6 @@
 package eventOrganizer.controllers.files;
 
-import eventOrganizer.dao.EventService;
+import eventOrganizer.dao.eventService.EventService;
 import eventOrganizer.entities.event.Event;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

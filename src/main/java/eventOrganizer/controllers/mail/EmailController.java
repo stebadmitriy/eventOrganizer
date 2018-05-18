@@ -1,6 +1,6 @@
 package eventOrganizer.controllers.mail;
 
-import eventOrganizer.dao.EmailServiceDAO;
+import eventOrganizer.dao.emailService.EmailServiceDAO;
 import eventOrganizer.entities.mail.EmailModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -21,17 +21,8 @@ public class EmailController {
     @RequestMapping(value = "/email/send", method = RequestMethod.POST)
     public ModelAndView email(@ModelAttribute("emailModel") EmailModel emailModel) {
         System.out.println("emailModel " + emailModel);
-        Map<String, Object> model = new HashMap<>();
-        model.put("from", "javastudy@mvc.app");
-        model.put("subject", "Hello from " + emailModel.getName() + "!");
-        model.put("to", emailModel.getEmail());
-        model.put("ccList", new ArrayList<>());
-        model.put("bccList", new ArrayList<>());
-        model.put("userName", emailModel.getName());
-        model.put("phoneNumber", emailModel.getPhoneNumber());
-        model.put("urlBestVideographer", "steba-video.com");
-        model.put("message", emailModel.getMessage());
-        boolean result = emailService.sendEmail("registered.vm", model);
+
+        boolean result = emailService.sendEmail("registered.vm", emailModel);
         //use redirect or you will send email after every refresh page.
         return new ModelAndView("redirect:/event", "resultSending", result);
     }

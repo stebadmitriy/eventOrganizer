@@ -1,0 +1,6 @@
+1. JMS:
+http://websystique.com/spring/spring-4-jms-activemq-example-with-annotations/
+https://examples.javacodegeeks.com/enterprise-java/spring/spring-jms-example/
+http://www.baeldung.com/spring-jms
+http://sboychenko.ru/spring-batch-jmstemplate/
+http://javainside.ru/jms-spring-obmen-soobshheniyami/

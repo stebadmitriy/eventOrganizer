@@ -16,6 +16,9 @@
           <element id="library" level="project" name="Maven: javax.mail:mail:1.4.7" />
           <element id="library" level="project" name="Maven: org.apache.velocity:velocity:1.7" />
           <element id="library" level="project" name="Maven: org.springframework:spring-context-support:4.2.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jms:4.2.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-messaging:4.2.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.apache.activemq:activemq-all:5.10.0" />
         </element>
       </element>
     </root>

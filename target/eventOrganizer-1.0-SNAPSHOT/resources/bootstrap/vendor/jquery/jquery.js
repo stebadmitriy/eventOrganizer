@@ -3206,7 +3206,7 @@ function createOptions( options ) {
  *	options: an optional list of space-separated options that will change how
  *			the callback list behaves or a more traditional option object
  *
- * By default a callback list will act like an event callback list and can be
+ * By default a callback list will act like an eventService callback list and can be
  * "fired" multiple times.
  *
  * Possible options:
@@ -3855,7 +3855,7 @@ jQuery.extend( {
 	isReady: false,
 
 	// A counter to track how many items to wait for before
-	// the ready event fires. See #6781
+	// the ready eventService fires. See #6781
 	readyWait: 1,
 
 	// Handle when the DOM is ready
@@ -3869,7 +3869,7 @@ jQuery.extend( {
 		// Remember that the DOM is ready
 		jQuery.isReady = true;
 
-		// If a normal DOM Ready event fired, decrement, and wait if need be
+		// If a normal DOM Ready eventService fired, decrement, and wait if need be
 		if ( wait !== true && --jQuery.readyWait > 0 ) {
 			return;
 		}
@@ -3881,7 +3881,7 @@ jQuery.extend( {
 
 jQuery.ready.then = readyList.then;
 
-// The ready event handler and self cleanup method
+// The ready eventService handler and self cleanup method
 function completed() {
 	document.removeEventListener( "DOMContentLoaded", completed );
 	window.removeEventListener( "load", completed );
@@ -3889,7 +3889,7 @@ function completed() {
 }
 
 // Catch cases where $(document).ready() is called
-// after the browser event has already occurred.
+// after the browser eventService has already occurred.
 // Support: IE <=9 - 10 only
 // Older IE sometimes signals "interactive" too soon
 if ( document.readyState === "complete" ||
@@ -3900,7 +3900,7 @@ if ( document.readyState === "complete" ||
 
 } else {
 
-	// Use the handy event callback
+	// Use the handy eventService callback
 	document.addEventListener( "DOMContentLoaded", completed );
 
 	// A fallback to window.onload, that will always work
@@ -4927,7 +4927,7 @@ function on( elem, types, selector, data, fn, one ) {
 		origFn = fn;
 		fn = function( event ) {
 
-			// Can use an empty set, since event contains the info
+			// Can use an empty set, since eventService contains the info
 			jQuery().off( event );
 			return origFn.apply( this, arguments );
 		};
@@ -4978,15 +4978,15 @@ jQuery.event = {
 			handler.guid = jQuery.guid++;
 		}
 
-		// Init the element's event structure and main handler, if this is the first
+		// Init the element's eventService structure and main handler, if this is the first
 		if ( !( events = elemData.events ) ) {
 			events = elemData.events = {};
 		}
 		if ( !( eventHandle = elemData.handle ) ) {
 			eventHandle = elemData.handle = function( e ) {
 
-				// Discard the second event of a jQuery.event.trigger() and
-				// when an event is called after a page has unloaded
+				// Discard the second eventService of a jQuery.eventService.trigger() and
+				// when an eventService is called after a page has unloaded
 				return typeof jQuery !== "undefined" && jQuery.event.triggered !== e.type ?
 					jQuery.event.dispatch.apply( elem, arguments ) : undefined;
 			};
@@ -5005,16 +5005,16 @@ jQuery.event = {
 				continue;
 			}
 
-			// If event changes its type, use the special event handlers for the changed type
+			// If eventService changes its type, use the special eventService handlers for the changed type
 			special = jQuery.event.special[ type ] || {};
 
-			// If selector defined, determine special event api type, otherwise given type
+			// If selector defined, determine special eventService api type, otherwise given type
 			type = ( selector ? special.delegateType : special.bindType ) || type;
 
 			// Update special based on newly reset type
 			special = jQuery.event.special[ type ] || {};
 
-			// handleObj is passed to all event handlers
+			// handleObj is passed to all eventService handlers
 			handleObj = jQuery.extend( {
 				type: type,
 				origType: origType,
@@ -5026,7 +5026,7 @@ jQuery.event = {
 				namespace: namespaces.join( "." )
 			}, handleObjIn );
 
-			// Init the event handler queue if we're the first
+			// Init the eventService handler queue if we're the first
 			if ( !( handlers = events[ type ] ) ) {
 				handlers = events[ type ] = [];
 				handlers.delegateCount = 0;
@@ -5056,13 +5056,13 @@ jQuery.event = {
 				handlers.push( handleObj );
 			}
 
-			// Keep track of which events have ever been used, for event optimization
+			// Keep track of which events have ever been used, for eventService optimization
 			jQuery.event.global[ type ] = true;
 		}
 
 	},
 
-	// Detach an event or set of events from an element
+	// Detach an eventService or set of events from an element
 	remove: function( elem, types, handler, selector, mappedTypes ) {
 
 		var j, origCount, tmp,
@@ -5117,8 +5117,8 @@ jQuery.event = {
 				}
 			}
 
-			// Remove generic event handler if we removed something and no more handlers exist
-			// (avoids potential for endless recursion during removal of special event handlers)
+			// Remove generic eventService handler if we removed something and no more handlers exist
+			// (avoids potential for endless recursion during removal of special eventService handlers)
 			if ( origCount && !handlers.length ) {
 				if ( !special.teardown ||
 					special.teardown.call( elem, namespaces, elemData.handle ) === false ) {
@@ -5138,7 +5138,7 @@ jQuery.event = {
 
 	dispatch: function( nativeEvent ) {
 
-		// Make a writable jQuery.Event from the native event object
+		// Make a writable jQuery.Event from the native eventService object
 		var event = jQuery.event.fix( nativeEvent );
 
 		var i, j, ret, matched, handleObj, handlerQueue,
@@ -5146,7 +5146,7 @@ jQuery.event = {
 			handlers = ( dataPriv.get( this, "events" ) || {} )[ event.type ] || [],
 			special = jQuery.event.special[ event.type ] || {};
 
-		// Use the fix-ed jQuery.Event rather than the (read-only) native event
+		// Use the fix-ed jQuery.Event rather than the (read-only) native eventService
 		args[ 0 ] = event;
 
 		for ( i = 1; i < arguments.length; i++ ) {
@@ -5172,8 +5172,8 @@ jQuery.event = {
 			while ( ( handleObj = matched.handlers[ j++ ] ) &&
 				!event.isImmediatePropagationStopped() ) {
 
-				// Triggered event must either 1) have no namespace, or 2) have namespace(s)
-				// a subset or equal to those in the bound event (both can have no namespace).
+				// Triggered eventService must either 1) have no namespace, or 2) have namespace(s)
+				// a subset or equal to those in the bound eventService (both can have no namespace).
 				if ( !event.rnamespace || event.rnamespace.test( handleObj.namespace ) ) {
 
 					event.handleObj = handleObj;
@@ -5300,7 +5300,7 @@ jQuery.event = {
 		},
 		focus: {
 
-			// Fire native event if possible so blur/focus sequence is correct
+			// Fire native eventService if possible so blur/focus sequence is correct
 			trigger: function() {
 				if ( this !== safeActiveElement() && this.focus ) {
 					this.focus();
@@ -5320,7 +5320,7 @@ jQuery.event = {
 		},
 		click: {
 
-			// For checkbox, fire native event so checked state will be right
+			// For checkbox, fire native eventService so checked state will be right
 			trigger: function() {
 				if ( this.type === "checkbox" && this.click && nodeName( this, "input" ) ) {
 					this.click();
@@ -5392,12 +5392,12 @@ jQuery.Event = function( src, props ) {
 		this.type = src;
 	}
 
-	// Put explicitly provided properties onto the event object
+	// Put explicitly provided properties onto the eventService object
 	if ( props ) {
 		jQuery.extend( this, props );
 	}
 
-	// Create a timestamp if incoming event doesn't have one
+	// Create a timestamp if incoming eventService doesn't have one
 	this.timeStamp = src && src.timeStamp || Date.now();
 
 	// Mark it as fixed
@@ -5444,7 +5444,7 @@ jQuery.Event.prototype = {
 	}
 };
 
-// Includes all common event props including KeyEvent and MouseEvent specific props
+// Includes all common eventService props including KeyEvent and MouseEvent specific props
 jQuery.each( {
 	altKey: true,
 	bubbles: true,
@@ -5505,8 +5505,8 @@ jQuery.each( {
 	}
 }, jQuery.event.addProp );
 
-// Create mouseenter/leave events using mouseover/out and event-time checks
-// so that event delegation works in jQuery.
+// Create mouseenter/leave events using mouseover/out and eventService-time checks
+// so that eventService delegation works in jQuery.
 // Do the same for pointerenter/pointerleave and pointerover/pointerout
 //
 // Support: Safari 7 only
@@ -5553,7 +5553,7 @@ jQuery.fn.extend( {
 		var handleObj, type;
 		if ( types && types.preventDefault && types.handleObj ) {
 
-			// ( event )  dispatched jQuery.Event
+			// ( eventService )  dispatched jQuery.Event
 			handleObj = types.handleObj;
 			jQuery( types.delegateTarget ).off(
 				handleObj.namespace ?
@@ -5851,7 +5851,7 @@ jQuery.extend( {
 							if ( special[ type ] ) {
 								jQuery.event.remove( elem, type );
 
-							// This is a shortcut to avoid jQuery.event.remove's overhead
+							// This is a shortcut to avoid jQuery.eventService.remove's overhead
 							} else {
 								jQuery.removeEvent( elem, type, data.handle );
 							}
@@ -8179,14 +8179,14 @@ jQuery.extend( jQuery.event, {
 
 		if ( type.indexOf( "." ) > -1 ) {
 
-			// Namespaced trigger; create a regexp to match event type in handle()
+			// Namespaced trigger; create a regexp to match eventService type in handle()
 			namespaces = type.split( "." );
 			type = namespaces.shift();
 			namespaces.sort();
 		}
 		ontype = type.indexOf( ":" ) < 0 && "on" + type;
 
-		// Caller can pass in a jQuery.Event object, Object, or just an event type string
+		// Caller can pass in a jQuery.Event object, Object, or just an eventService type string
 		event = event[ jQuery.expando ] ?
 			event :
 			new jQuery.Event( type, typeof event === "object" && event );
@@ -8198,13 +8198,13 @@ jQuery.extend( jQuery.event, {
 			new RegExp( "(^|\\.)" + namespaces.join( "\\.(?:.*\\.|)" ) + "(\\.|$)" ) :
 			null;
 
-		// Clean up the event in case it is being reused
+		// Clean up the eventService in case it is being reused
 		event.result = undefined;
 		if ( !event.target ) {
 			event.target = elem;
 		}
 
-		// Clone any incoming data and prepend the event, creating the handler arg list
+		// Clone any incoming data and prepend the eventService, creating the handler arg list
 		data = data == null ?
 			[ event ] :
 			jQuery.makeArray( data, [ event ] );
@@ -8215,7 +8215,7 @@ jQuery.extend( jQuery.event, {
 			return;
 		}
 
-		// Determine event propagation path in advance, per W3C events spec (#9951)
+		// Determine eventService propagation path in advance, per W3C events spec (#9951)
 		// Bubble up to document, then to window; watch for a global ownerDocument var (#9724)
 		if ( !onlyHandlers && !special.noBubble && !isWindow( elem ) ) {
 
@@ -8234,7 +8234,7 @@ jQuery.extend( jQuery.event, {
 			}
 		}
 
-		// Fire handlers on the event path
+		// Fire handlers on the eventService path
 		i = 0;
 		while ( ( cur = eventPath[ i++ ] ) && !event.isPropagationStopped() ) {
 			lastElement = cur;
@@ -8267,18 +8267,18 @@ jQuery.extend( jQuery.event, {
 				special._default.apply( eventPath.pop(), data ) === false ) &&
 				acceptData( elem ) ) {
 
-				// Call a native DOM method on the target with the same name as the event.
+				// Call a native DOM method on the target with the same name as the eventService.
 				// Don't do default actions on window, that's where global variables be (#6170)
 				if ( ontype && isFunction( elem[ type ] ) && !isWindow( elem ) ) {
 
-					// Don't re-trigger an onFOO event when we call its FOO() method
+					// Don't re-trigger an onFOO eventService when we call its FOO() method
 					tmp = elem[ ontype ];
 
 					if ( tmp ) {
 						elem[ ontype ] = null;
 					}
 
-					// Prevent re-triggering of the same event, since we already bubbled it above
+					// Prevent re-triggering of the same eventService, since we already bubbled it above
 					jQuery.event.triggered = type;
 
 					if ( event.isPropagationStopped() ) {
@@ -8303,7 +8303,7 @@ jQuery.extend( jQuery.event, {
 		return event.result;
 	},
 
-	// Piggyback on a donor event to simulate a different one
+	// Piggyback on a donor eventService to simulate a different one
 	// Used only for `focus(in | out)` events
 	simulate: function( type, elem, event ) {
 		var e = jQuery.extend(
@@ -9082,7 +9082,7 @@ jQuery.extend( {
 		}
 
 		// We can fire global events as of now if asked to
-		// Don't fire events if jQuery.event is undefined in an AMD-usage scenario (#15118)
+		// Don't fire events if jQuery.eventService is undefined in an AMD-usage scenario (#15118)
 		fireGlobals = jQuery.event && s.global;
 
 		// Watch for a new set of requests
@@ -9184,7 +9184,7 @@ jQuery.extend( {
 		} else {
 			jqXHR.readyState = 1;
 
-			// Send global event
+			// Send global eventService
 			if ( fireGlobals ) {
 				globalEventContext.trigger( "ajaxSend", [ jqXHR, s ] );
 			}
@@ -9814,7 +9814,7 @@ jQuery.parseHTML = function( data, context, keepScripts ) {
 
 	if ( !context ) {
 
-		// Stop scripts or inline event handlers from being executed immediately
+		// Stop scripts or inline eventService handlers from being executed immediately
 		// by using document.implementation
 		if ( support.createHTMLDocument ) {
 			context = document.implementation.createHTMLDocument( "" );
@@ -10205,7 +10205,7 @@ jQuery.each( ( "blur focus focusin focusout resize scroll click dblclick " +
 	"change select submit keydown keypress keyup contextmenu" ).split( " " ),
 	function( i, name ) {
 
-	// Handle event binding
+	// Handle eventService binding
 	jQuery.fn[ name ] = function( data, fn ) {
 		return arguments.length > 0 ?
 			this.on( name, null, data, fn ) :

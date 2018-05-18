@@ -1,6 +1,9 @@
 package eventOrganizer.entities.mail;
 
-public class EmailModel {
+
+import java.io.Serializable;
+
+public class EmailModel implements Serializable{
     private String name;
     private String email;
     private String phoneNumber;

@@ -16,9 +16,9 @@
 		options: {
 			prependExistingHelpBlock: false,
 			sniffHtml: true, // sniff for 'required', 'maxlength', etc
-			preventSubmit: true, // stop the form submit event from firing if validation fails
+			preventSubmit: true, // stop the form submit eventService from firing if validation fails
 			submitError: false, // function called if there is an error when trying to submit
-			submitSuccess: false, // function called just before a successful submit event is sent to the server
+			submitSuccess: false, // function called just before a successful submit eventService is sent to the server
             semanticallyStrict: false, // set to true to tidy up generated HTML output
 			autoAdd: {
 				helpBlocks: true
@@ -608,7 +608,7 @@
                   // Timeout is set to avoid problems with the events being considered 'already fired'
                   setTimeout(function () {
                     rrjqbvThis.trigger("change.validation");
-                  }, 1); // doesn't need a long timeout, just long enough for the event bubble to burst
+                  }, 1); // doesn't need a long timeout, just long enough for the eventService bubble to burst
                 }
               }
             );
@@ -654,7 +654,7 @@
                   // Timeout is set to avoid problems with the events being considered 'already fired'
                   setTimeout(function () {
                     $this.trigger("change.validation");
-                  }, 1); // doesn't need a long timeout, just long enough for the event bubble to burst
+                  }, 1); // doesn't need a long timeout, just long enough for the eventService bubble to burst
                 }
               },
               failure: function () {
@@ -665,7 +665,7 @@
                 // Timeout is set to avoid problems with the events being considered 'already fired'
                 setTimeout(function () {
                   $this.trigger("change.validation");
-                }, 1); // doesn't need a long timeout, just long enough for the event bubble to burst
+                }, 1); // doesn't need a long timeout, just long enough for the eventService bubble to burst
               }
             });
           }

@@ -711,6 +711,7 @@
     <div class="container">
 
         <c:url value="/email/send" var="send"/>
+        <c:url value="/jms/send" var="jmsSend"/>
         <!-- Contact Form -->
         <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
         <div class="row">
@@ -724,7 +725,7 @@
                         <h3 style="color:red">Email wasn't send!</h3>
                     </c:if>
                 </div>
-                <form:form name="sentMessage" id="contactForm" action="${send}"
+                <form:form name="sentMessage" id="contactForm" action="${jmsSend}"
                            method="post" modelAttribute="emailModel" novalidate="true" >
                     <div class="control-group form-group">
                         <div class="controls">
