@@ -7,51 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d946308-0e72-4dd1-9388-c6fe473fbdc5" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_activemq_all_5_10_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jms_4_2_4_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_4_2_4_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/docs.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eventOrganizer/controllers/JMS/JMSController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eventOrganizer/dao/JMSService/JMSListener.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eventOrganizer/dao/JMSService/JMSListenerConfiguration.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eventOrganizer/dao/JMSService/JMSService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eventOrganizer/dao/JMSService/JMSServiceDAO.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/version_4_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/version_4_war.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/eventOrganizer/controllers/files/ListController.java" afterPath="$PROJECT_DIR$/src/main/java/eventOrganizer/controllers/files/ListController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/eventOrganizer/controllers/mail/EmailController.java" afterPath="$PROJECT_DIR$/src/main/java/eventOrganizer/controllers/mail/EmailController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/eventOrganizer/dao/EmailService.java" afterPath="$PROJECT_DIR$/src/main/java/eventOrganizer/dao/emailService/EmailService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/eventOrganizer/dao/EmailServiceDAO.java" afterPath="$PROJECT_DIR$/src/main/java/eventOrganizer/dao/emailService/EmailServiceDAO.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/eventOrganizer/dao/EventService.java" afterPath="$PROJECT_DIR$/src/main/java/eventOrganizer/dao/eventService/EventService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/eventOrganizer/dao/EventServiceDAO.java" afterPath="$PROJECT_DIR$/src/main/java/eventOrganizer/dao/eventService/EventServiceDAO.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/eventOrganizer/entities/mail/EmailModel.java" afterPath="$PROJECT_DIR$/src/main/java/eventOrganizer/entities/mail/EmailModel.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/application-context.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/application-context.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/js/bootstrap.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/js/bootstrap.js" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/js/jqBootstrapValidation.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/js/jqBootstrapValidation.js" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/vendor/bootstrap/js/bootstrap.bundle.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/vendor/bootstrap/js/bootstrap.bundle.js" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/vendor/bootstrap/js/bootstrap.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/vendor/bootstrap/js/bootstrap.js" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/vendor/chart.js/Chart.bundle.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/vendor/chart.js/Chart.bundle.js" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/vendor/chart.js/Chart.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/vendor/chart.js/Chart.js" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/vendor/datatables/jquery.dataTables.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/vendor/datatables/jquery.dataTables.js" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/vendor/jquery/jquery.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/vendor/jquery/jquery.js" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/vendor/jquery/jquery.slim.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/vendor/jquery/jquery.slim.js" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/vendor/jquery/jquery.slim.min.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/vendor/jquery/jquery.slim.min.js" />
-      <change beforePath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT.war" />
-      <change beforePath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/WEB-INF/config/application-context.xml" afterPath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/WEB-INF/config/application-context.xml" />
-      <change beforePath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/WEB-INF/view/index.jsp" afterPath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/WEB-INF/view/index.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/resources/bootstrap/js/bootstrap.js" afterPath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/resources/bootstrap/js/bootstrap.js" />
-      <change beforePath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/resources/bootstrap/js/jqBootstrapValidation.js" afterPath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/resources/bootstrap/js/jqBootstrapValidation.js" />
-      <change beforePath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/resources/bootstrap/vendor/bootstrap/js/bootstrap.bundle.js" afterPath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/resources/bootstrap/vendor/bootstrap/js/bootstrap.bundle.js" />
-      <change beforePath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/resources/bootstrap/vendor/bootstrap/js/bootstrap.js" afterPath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/resources/bootstrap/vendor/bootstrap/js/bootstrap.js" />
-      <change beforePath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/resources/bootstrap/vendor/chart.js/Chart.bundle.js" afterPath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/resources/bootstrap/vendor/chart.js/Chart.bundle.js" />
-      <change beforePath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/resources/bootstrap/vendor/chart.js/Chart.js" afterPath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/resources/bootstrap/vendor/chart.js/Chart.js" />
-      <change beforePath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/resources/bootstrap/vendor/datatables/jquery.dataTables.js" afterPath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/resources/bootstrap/vendor/datatables/jquery.dataTables.js" />
-      <change beforePath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/resources/bootstrap/vendor/jquery/jquery.js" afterPath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/resources/bootstrap/vendor/jquery/jquery.js" />
-      <change beforePath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/resources/bootstrap/vendor/jquery/jquery.slim.js" afterPath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/resources/bootstrap/vendor/jquery/jquery.slim.js" />
-      <change beforePath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/resources/bootstrap/vendor/jquery/jquery.slim.min.js" afterPath="$PROJECT_DIR$/target/eventOrganizer-1.0-SNAPSHOT/resources/bootstrap/vendor/jquery/jquery.slim.min.js" />
-      <change beforePath="$PROJECT_DIR$/version_4.iml" afterPath="$PROJECT_DIR$/version_4.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -594,7 +550,7 @@
       <workItem from="1526464392729" duration="603000" />
       <workItem from="1526467946162" duration="11354000" />
       <workItem from="1526538328494" duration="15897000" />
-      <workItem from="1526626111781" duration="21968000" />
+      <workItem from="1526626111781" duration="22271000" />
     </task>
     <task id="LOCAL-00001" summary="Adding JDBC functional">
       <created>1526558944669</created>
@@ -610,11 +566,18 @@
       <option name="project" value="LOCAL" />
       <updated>1526567974762</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Adding JMS Service functional">
+      <created>1526655607604</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1526655607604</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82844000" />
+    <option name="totallyTimeSpent" value="83147000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -666,7 +629,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding JDBC functional" />
     <MESSAGE value="Adding Java mail Service functional" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding Java mail Service functional" />
+    <MESSAGE value="Adding JMS Service functional" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding JMS Service functional" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
