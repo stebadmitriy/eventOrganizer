@@ -18,8 +18,8 @@
                     <tbody>
                     <tr >
                         <td  style="color: #000000; font-size: 14px; font-family: arial, sans-serif;" align="left">
-                                <b>Hey!</b><br/>User $userName wrote to you
-                            $phoneNumber
+                                <b>Hey!</b><br/>User $userName wrote to you.<br/>
+                            You can call back $userName at the number $phoneNumber
                         </td>
                     </tr>
                     </tbody>
@@ -31,7 +31,7 @@
                 <table style="width: 450px;">
                     <tbody>
                     <tr>
-                        <td style="font-size: 17px; font-family: arial, sans-serif; color: #5d8400; text-align: left;font-weight: bold;">You can see email from your app!</td>
+                        <td style="font-size: 17px; font-family: arial, sans-serif; color: #5d8400; text-align: left;font-weight: bold;">You can see email from $from!</td>
                     </tr>
                     <tr>
                         <td style="font-size: 12px; font-family: arial, sans-serif; color: #000000; text-align: left;">

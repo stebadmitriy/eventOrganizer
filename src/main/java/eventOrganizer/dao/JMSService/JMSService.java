@@ -8,6 +8,7 @@ import org.springframework.jms.support.JmsUtils;
 import org.springframework.stereotype.Repository;
 
 import javax.jms.*;
+import java.util.Enumeration;
 
 @Repository
 public class JMSService implements JMSServiceDAO {
@@ -32,21 +33,32 @@ public class JMSService implements JMSServiceDAO {
 
     @Override
     public void sendMessage(EmailModel emailModel) {
-//        jmsTemplate.convertAndSend(destination, emailModel);
         jmsTemplate.send(destination, new MessageCreator() {
             @Override
             public Message createMessage(Session session) throws JMSException {
                 return session.createObjectMessage(emailModel);
             }
         });
-        System.out.println("2");
     }
 
     @Override
-    public String receiveMessage() {
+    public String receiveTextMessage() {
+        System.out.println(jmsTemplate);
+        System.out.println(jmsTemplate.receive(destination));
         TextMessage textMessage = (TextMessage) jmsTemplate.receive(destination);
         try {
             return textMessage.getText();
+        } catch (JMSException e) {
+            throw JmsUtils.convertJmsAccessException(e);
+        }
+    }
+
+    @Override
+    public Enumeration receiveMessage() {
+        System.out.println(jmsTemplate.receive(destination));
+        Message message = jmsTemplate.receive(destination);
+        try {
+            return message.getPropertyNames();
         } catch (JMSException e) {
             throw JmsUtils.convertJmsAccessException(e);
         }

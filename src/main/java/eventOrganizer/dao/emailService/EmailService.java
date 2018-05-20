@@ -33,7 +33,6 @@ public class EmailService implements EmailServiceDAO {
 
     @Override
     public boolean sendEmail(final String templateName, final EmailModel emailModel) {
-        System.out.println("34");
         Map<String, Object> modelMap = convertEmailModelToMap(emailModel);
 
         boolean res = false;
@@ -74,7 +73,6 @@ public class EmailService implements EmailServiceDAO {
             ex.printStackTrace();
         }
 
-        System.out.println("4");
         return res;
     }
 

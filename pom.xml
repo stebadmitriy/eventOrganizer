@@ -166,6 +166,7 @@
             <version>1.7</version>
         </dependency>
 
+        <!-- Spring JMS Dependency -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jms</artifactId>
@@ -178,10 +179,6 @@
             <version>5.10.0</version>
         </dependency>
     </dependencies>
-
-
-
-
 
 
     <build>

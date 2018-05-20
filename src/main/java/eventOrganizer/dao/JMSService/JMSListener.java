@@ -6,19 +6,22 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Component;
 
-import javax.jms.Destination;
+import javax.jms.JMSException;
+import javax.jms.Message;
 
 @Component
 public class JMSListener {
-//    @Autowired
+    //    @Autowired
 //    private Destination destination;
     @Autowired
     private EmailService emailService;
 
     @JmsListener(destination = "emailMessageQueue")
-    public void sendEmail(EmailModel model){
-        System.out.println("3");
+    public void sendEmail(EmailModel model) {
         emailService.sendEmail("registered.vm", model);
+    }
 
+    @JmsListener(destination = "emailMessageQueue")
+    public void receiveEmail(EmailModel emailModel) throws JMSException {
     }
 }
