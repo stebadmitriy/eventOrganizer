@@ -1,7 +1,7 @@
 package eventOrganizer.controllers.files;
 
-import eventOrganizer.dao.eventService.EventService;
-import eventOrganizer.entities.event.Event;
+import eventOrganizer.entities2.EventEntity;
+import eventOrganizer.services.eventService.EventServiceDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,12 +14,12 @@ import java.util.List;
 @RequestMapping(value = "")
 public class ListController {
     @Autowired
-    EventService eventService;
+    EventServiceDAO eventService;
 
 
     @RequestMapping(value = "/event", method = RequestMethod.GET)
     public ModelAndView getList() {
-        List<Event> events = eventService.getEvents();
+        List<EventEntity> events = eventService.getEvents();
         System.out.println(events);
         return new ModelAndView("/index", "events", events);
 

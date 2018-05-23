@@ -2,9 +2,11 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:jpa="http://www.springframework.org/schema/data/jpa"
        xmlns:jdbc="http://www.springframework.org/schema/jdbc"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:jms="http://www.springframework.org/schema/jms"
+       xmlns:tx="http://www.springframework.org/schema/tx"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/mvc
@@ -12,7 +14,13 @@
 	   http://www.springframework.org/schema/context
 	   http://www.springframework.org/schema/context/spring-context.xsd
 	   http://www.springframework.org/schema/jdbc
-       http://www.springframework.org/schema/jdbc/spring-jdbc.xsd http://www.springframework.org/schema/jms http://www.springframework.org/schema/jms/spring-jms.xsd">
+       http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
+       http://www.springframework.org/schema/jms
+       http://www.springframework.org/schema/jms/spring-jms.xsd
+       http://www.springframework.org/schema/data/jpa
+       http://www.springframework.org/schema/data/jpa/spring-jpa.xsd
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx.xsd">
 
 
     <!-- Static Resources Configuration (get access to static sources such as CSS and JavaScript files) -->
@@ -33,6 +41,7 @@
         <property name="password" value="${jdbc.password}"/>
     </bean>
 
+    <context:annotation-config/>
     <!-- Java Mail Configuration -->
     <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
         <property name="username" value="${java.mail.username}"/>
@@ -66,10 +75,38 @@
         <property name="connectionFactory" ref="connectionFactory"/>
         <property name="receiveTimeout" value="10000"/>
     </bean>
-    <!--<bean id="jmsListener" class="eventOrganizer.dao.JMSService.JMSListener"></bean>-->
+    <!--<bean id="jmsListener" class="JMSListener"></bean>-->
     <!--<jms:listener-container connection-factory="connectionFactory">-->
-        <!--<jms:listener destination="messageDestination" ref="jmsListener" method="sendEmail"/>-->
+    <!--<jms:listener destination="messageDestination" ref="jmsListener" method="sendEmail"/>-->
     <!--</jms:listener-container>-->
+
+    <!-- JPA Configuration -->
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="emf"/>
+    </bean>
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+
+    <!-- EntityManagerFactory -->
+    <bean id="emf" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <!--Поставщик данных - hibernate-->
+        <property name="jpaVendorAdapter">
+            <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"/>
+        </property>
+        <!--поиск сущностей в этом пакете-->
+        <property name="packagesToScan" value="eventOrganizer"/>
+        <!--детали конфигурации поставщика постоянства (hibernate) -->
+        <property name="jpaProperties">
+            <props>
+                <!--<prop key="hibernate.dialect">org.hibernate.dialect.H2Dialect</prop>-->
+                <!--<prop key="hibernate.max_fetch_depth">3</prop>-->
+                <!--<prop key="hibernate.jdbc.fetch_size">50</prop>-->
+                <!--<prop key="hibernate.jdЬc.batch_size">10</prop>-->
+                <prop key="hibernate.show_sql">true</prop>
+            </props>
+        </property>
+    </bean>
+    <jpa:repositories base-package="eventOrganizer" entity-manager-factory-ref="emf"/>
 
 
 </beans>

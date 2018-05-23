@@ -1,6 +1,11 @@
 package eventOrganizer.entities.event;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class PlaceEvent {
+    @Id
     private int id;
     private String name;
     private String address;

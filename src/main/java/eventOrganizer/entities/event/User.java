@@ -1,8 +1,11 @@
 package eventOrganizer.entities.event;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.validation.constraints.Size;
-
+@Entity
 public class User {
+    @Id
     private int id;
     @Size(min = 5,message = "Name should min 5 letters" )
     private String username;

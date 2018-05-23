@@ -1,9 +1,13 @@
 package eventOrganizer.entities.event;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.sql.Timestamp;
 import java.util.Objects;
 
+@Entity
 public class Client {
+    @Id
     private int id;
     private String firstName;
     private String surname;

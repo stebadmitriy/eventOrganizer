@@ -676,11 +676,11 @@
                             <c:forEach var="event" items="${events}">
                                 <tr>
                                     <td>${event.name}</td>
-                                    <td>${event.genreEvent.name}</td>
-                                    <td>${event.client.firstName} ${event.client.surname}</td>
-                                    <td>${event.client.phone}</td>
-                                    <td>${event.salary.totalAmount}</td>
-                                    <td>${event.placeEvent.name} ${event.placeEvent.address}</td>
+                                    <td>${event.genre.genreName}</td>
+                                    <%--<td>${event.client.firstName} ${event.client.surname}</td>--%>
+                                    <%--<td>${event.client.phone}</td>--%>
+                                    <td>${event.totalAmount}</td>
+                                    <%--<td>${event.placeEvent.name} ${event.placeEvent.address}</td>--%>
                                     <fmt:formatDate type = "date"
                                                     dateStyle = "long" timeStyle = "long" value = "${event.date}" var="dateFormat"/>
                                     <td>${dateFormat}</td>
