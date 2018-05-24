@@ -1,19 +1,19 @@
 package eventOrganizer.entities.event;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.validation.constraints.Size;
+import javax.persistence.*;
+import java.util.Objects;
+
 @Entity
-public class User {
-    @Id
+@Table(name = "user", schema = "eventorganizer", catalog = "")
+public class UserEntity {
     private int id;
-    @Size(min = 5,message = "Name should min 5 letters" )
     private String username;
-    @Size(min = 5,message = "Password should min 5 letters" )
     private String password;
     private String firstname;
     private String surname;
 
+    @Id
+    @Column(name = "id", nullable = false)
     public int getId() {
         return id;
     }
@@ -22,6 +22,8 @@ public class User {
         this.id = id;
     }
 
+    @Basic
+    @Column(name = "username", nullable = false, length = 45)
     public String getUsername() {
         return username;
     }
@@ -30,6 +32,8 @@ public class User {
         this.username = username;
     }
 
+    @Basic
+    @Column(name = "password", nullable = false, length = 45)
     public String getPassword() {
         return password;
     }
@@ -38,6 +42,8 @@ public class User {
         this.password = password;
     }
 
+    @Basic
+    @Column(name = "firstname", nullable = false, length = 45)
     public String getFirstname() {
         return firstname;
     }
@@ -46,6 +52,8 @@ public class User {
         this.firstname = firstname;
     }
 
+    @Basic
+    @Column(name = "surname", nullable = false, length = 45)
     public String getSurname() {
         return surname;
     }
@@ -58,25 +66,17 @@ public class User {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-
-        User user = (User) o;
-
-        if (id != user.id) return false;
-        if (username != null ? !username.equals(user.username) : user.username != null) return false;
-        if (password != null ? !password.equals(user.password) : user.password != null) return false;
-        if (firstname != null ? !firstname.equals(user.firstname) : user.firstname != null) return false;
-        if (surname != null ? !surname.equals(user.surname) : user.surname != null) return false;
-
-        return true;
+        UserEntity that = (UserEntity) o;
+        return id == that.id &&
+                Objects.equals(username, that.username) &&
+                Objects.equals(password, that.password) &&
+                Objects.equals(firstname, that.firstname) &&
+                Objects.equals(surname, that.surname);
     }
 
     @Override
     public int hashCode() {
-        int result = id;
-        result = 31 * result + (username != null ? username.hashCode() : 0);
-        result = 31 * result + (password != null ? password.hashCode() : 0);
-        result = 31 * result + (firstname != null ? firstname.hashCode() : 0);
-        result = 31 * result + (surname != null ? surname.hashCode() : 0);
-        return result;
+
+        return Objects.hash(id, username, password, firstname, surname);
     }
 }

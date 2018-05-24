@@ -1,4 +1,4 @@
-package eventOrganizer.entities2;
+package eventOrganizer.entities.event;
 
 import javax.persistence.*;
 import java.util.HashSet;

@@ -1,6 +1,6 @@
 package eventOrganizer.services.eventService;
 
-import eventOrganizer.entities2.EventEntity;
+import eventOrganizer.entities.event.EventEntity;
 
 import java.util.List;
 

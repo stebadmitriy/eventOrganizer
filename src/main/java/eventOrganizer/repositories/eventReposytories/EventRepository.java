@@ -1,6 +1,6 @@
 package eventOrganizer.repositories.eventReposytories;
 
-import eventOrganizer.entities2.EventEntity;
+import eventOrganizer.entities.event.EventEntity;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
