@@ -2,7 +2,9 @@ package eventOrganizer.entities2;
 
 import javax.persistence.*;
 import java.sql.Date;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 @Table(name = "client", schema = "eventorganizer", catalog = "")
@@ -14,6 +16,20 @@ public class ClientEntity {
     private String phone;
     private String linkToProfileVk;
     private String getLinkToProfileFaceBook;
+
+    private Set<EventEntity> events = new HashSet<>();
+
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "event_client",
+            joinColumns = @JoinColumn(name = "client_id"),
+            inverseJoinColumns = @JoinColumn(name = "event_id"))
+    public Set<EventEntity> getEvents() {
+        return events;
+    }
+
+    public void setEvents(Set<EventEntity> events) {
+        this.events = events;
+    }
 
     @Id
     @Column(name = "id", nullable = false)

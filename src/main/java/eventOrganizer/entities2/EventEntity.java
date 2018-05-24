@@ -4,15 +4,17 @@ import javax.persistence.*;
 import java.sql.Date;
 import java.sql.Time;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 @Table(name = "event", schema = "eventorganizer", catalog = "")
 public class EventEntity {
     private int id;
     private String name;
-    private Integer placeId;
-    private Integer userId;
+//    private Integer placeId;
+//    private Integer userId;
     private Time timeBegin;
     private Time timeEnd;
     private String source;
@@ -28,14 +30,47 @@ public class EventEntity {
     private Integer finalPayment;
 
     private GenreEventEntity genre;
+    private PlaceEventEntity place;
+
     @ManyToOne
     @JoinColumn(name = "fk_genre_id", referencedColumnName = "genre_id")
-    public GenreEventEntity getGenre(){
+    public GenreEventEntity getGenre() {
         return this.genre;
     }
 
     public void setGenre(GenreEventEntity genre) {
         this.genre = genre;
+    }
+
+    @ManyToOne
+    @JoinColumn(name = "place_id", referencedColumnName = "id")
+    public PlaceEventEntity getPlace() {
+        return place;
+    }
+
+    public void setPlace(PlaceEventEntity place) {
+        this.place = place;
+    }
+
+
+
+
+    private Set<ClientEntity> clients = new HashSet<>();
+
+    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinTable(name = "event_client",
+            joinColumns = @JoinColumn(name = "event_id"),
+            inverseJoinColumns = @JoinColumn(name = "client_id"))
+    public Set<ClientEntity> getClients() {
+        return clients;
+    }
+
+    public void setClients(Set<ClientEntity> clients) {
+        this.clients = clients;
+    }
+
+    public void addClient(ClientEntity client) {
+        clients.add(client);
     }
 
     @Id
@@ -58,26 +93,26 @@ public class EventEntity {
     public void setName(String name) {
         this.name = name;
     }
+//
+//    @Basic
+//    @Column(name = "place_id", nullable = true)
+//    public Integer getPlaceId() {
+//        return placeId;
+//    }
+//
+//    public void setPlaceId(Integer placeId) {
+//        this.placeId = placeId;
+//    }
 
-    @Basic
-    @Column(name = "place_id", nullable = true)
-    public Integer getPlaceId() {
-        return placeId;
-    }
-
-    public void setPlaceId(Integer placeId) {
-        this.placeId = placeId;
-    }
-
-    @Basic
-    @Column(name = "user_id", nullable = true)
-    public Integer getUserId() {
-        return userId;
-    }
-
-    public void setUserId(Integer userId) {
-        this.userId = userId;
-    }
+//    @Basic
+//    @Column(name = "user_id", nullable = true)
+//    public Integer getUserId() {
+//        return userId;
+//    }
+//
+//    public void setUserId(Integer userId) {
+//        this.userId = userId;
+//    }
 
     @Basic
     @Column(name = "timeBegin", nullable = false)
@@ -216,8 +251,6 @@ public class EventEntity {
         EventEntity that = (EventEntity) o;
         return id == that.id &&
                 Objects.equals(name, that.name) &&
-                Objects.equals(placeId, that.placeId) &&
-                Objects.equals(userId, that.userId) &&
                 Objects.equals(timeBegin, that.timeBegin) &&
                 Objects.equals(timeEnd, that.timeEnd) &&
                 Objects.equals(source, that.source) &&
@@ -236,7 +269,7 @@ public class EventEntity {
     @Override
     public int hashCode() {
 
-        int result = Objects.hash(id, name, placeId, userId, timeBegin, timeEnd, source, description, rating, voteCount, date, totalAmount, prepayment, paymentAtEvent, finalPayment);
+        int result = Objects.hash(id, name,   timeBegin, timeEnd, source, description, rating, voteCount, date, totalAmount, prepayment, paymentAtEvent, finalPayment);
         result = 31 * result + Arrays.hashCode(image);
         result = 31 * result + Arrays.hashCode(content);
         return result;
@@ -247,8 +280,6 @@ public class EventEntity {
         return "EventEntity{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", placeId=" + placeId +
-                ", userId=" + userId +
                 ", timeBegin=" + timeBegin +
                 ", timeEnd=" + timeEnd +
                 ", source='" + source + '\'' +
@@ -261,6 +292,8 @@ public class EventEntity {
                 ", paymentAtEvent=" + paymentAtEvent +
                 ", finalPayment=" + finalPayment +
                 ", genre=" + genre +
+                ", place=" + place +
+                ", clients=" + clients +
                 '}';
     }
 }

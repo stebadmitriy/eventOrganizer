@@ -36,7 +36,6 @@
         <setting name="provider-name" value="" />
         <datasource-mapping>
           <factory-entry name="NewPersistenceUnit" />
-          <factory-entry name="emf" />
           <factory-entry name="noname-a.xml@0" value="7ddb2a4f-9332-4590-906e-1de8718d629b" />
         </datasource-mapping>
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/main/webapp/resources/META-INF/persistence.xml" />

@@ -677,10 +677,13 @@
                                 <tr>
                                     <td>${event.name}</td>
                                     <td>${event.genre.genreName}</td>
-                                    <%--<td>${event.client.firstName} ${event.client.surname}</td>--%>
-                                    <%--<td>${event.client.phone}</td>--%>
+                                    <c:forEach var="client" items="${event.clients}">
+                                        <td title="${client.dateOfBirth}">${client.firstName} ${client.surname}</td>
+                                        <td>${client.phone}</td>
+                                    </c:forEach>
+
                                     <td>${event.totalAmount}</td>
-                                    <%--<td>${event.placeEvent.name} ${event.placeEvent.address}</td>--%>
+                                    <td>${event.place.name} ${event.place.address}</td>
                                     <fmt:formatDate type = "date"
                                                     dateStyle = "long" timeStyle = "long" value = "${event.date}" var="dateFormat"/>
                                     <td>${dateFormat}</td>

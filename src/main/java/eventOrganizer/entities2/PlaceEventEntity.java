@@ -1,7 +1,9 @@
 package eventOrganizer.entities2;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 @Table(name = "place_event", schema = "eventorganizer", catalog = "")
@@ -10,6 +12,16 @@ public class PlaceEventEntity {
     private String name;
     private String address;
     private String description;
+
+    private Set<EventEntity> events = new HashSet<>();
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "place", fetch = FetchType.EAGER)
+    public Set<EventEntity> getEvents() {
+        return events;
+    }
+
+    public void setEvents(Set<EventEntity> events) {
+        this.events = events;
+    }
 
     @Id
     @Column(name = "id", nullable = false)

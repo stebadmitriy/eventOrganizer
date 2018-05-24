@@ -79,6 +79,10 @@
     <!--<jms:listener-container connection-factory="connectionFactory">-->
     <!--<jms:listener destination="messageDestination" ref="jmsListener" method="sendEmail"/>-->
     <!--</jms:listener-container>-->
+    <bean id="jmsListenerContainerFactor" class="org.springframework.jms.config.DefaultJmsListenerContainerFactory">
+        <property name="connectionFactory" ref="connectionFactory"/>
+        <property name="concurrency" value="1-1"/>
+    </bean>
 
     <!-- JPA Configuration -->
     <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">

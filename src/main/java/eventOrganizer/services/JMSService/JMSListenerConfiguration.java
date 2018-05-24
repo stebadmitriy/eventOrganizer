@@ -8,6 +8,7 @@
 //import org.springframework.jms.annotation.EnableJms;
 //import org.springframework.jms.config.DefaultJmsListenerContainerFactory;
 //import org.springframework.orm.jpa.JpaTransactionManager;
+//import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 //import org.springframework.orm.jpa.LocalEntityManagerFactoryBean;
 //import org.springframework.transaction.PlatformTransactionManager;
 //import org.springframework.transaction.annotation.EnableTransactionManagement;
@@ -22,6 +23,8 @@
 //public class JMSListenerConfiguration {
 //    @Autowired
 //    ConnectionFactory connectionFactory;
+//    @Autowired
+//    LocalContainerEntityManagerFactoryBean entityManagerFactoryBean;
 //
 //    @Bean
 //    public DefaultJmsListenerContainerFactory jmsListenerContainerFactory() {
@@ -31,18 +34,18 @@
 //        return factory;
 //    }
 //
-//    @Bean
-//    public LocalEntityManagerFactoryBean entityManagerFactory() {
-//        LocalEntityManagerFactoryBean result =
-//                new LocalEntityManagerFactoryBean();
-//        result.setPersistenceUnitName("eventOrganizer");
-//        return result;
-//    }
+////    @Bean
+////    public LocalEntityManagerFactoryBean entityManagerFactory() {
+////        LocalEntityManagerFactoryBean result =
+////                new LocalEntityManagerFactoryBean();
+////        result.setPersistenceUnitName("eventOrganizer");
+////        return result;
+////    }
 //
-//    @Bean
-//    public PlatformTransactionManager transactionManager() {
-//        JpaTransactionManager result = new JpaTransactionManager();
-//        result.setEntityManagerFactory(entityManagerFactory().getObject());
-//        return result;
-//    }
+////    @Bean
+////    public PlatformTransactionManager transactionManager() {
+////        JpaTransactionManager result = new JpaTransactionManager();
+////        result.setEntityManagerFactory(entityManagerFactory().getObject());
+////        return result;
+////    }
 //}
