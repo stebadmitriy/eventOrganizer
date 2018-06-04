@@ -1,6 +1,12 @@
 package eventOrganizer.entities.event;
 
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
+
 import javax.persistence.*;
+import javax.validation.Valid;
+import javax.validation.constraints.NotNull;
 import java.sql.Date;
 import java.sql.Time;
 import java.util.Arrays;
@@ -8,14 +14,16 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
+
+@EqualsAndHashCode(exclude = {"content", "image", "clients", "place"})
+@ToString
 @Entity
 @Table(name = "event", schema = "eventorganizer", catalog = "")
 public class EventEntity {
     private int id;
     private String name;
-//    private Integer placeId;
-//    private Integer userId;
     private Time timeBegin;
+    @NotNull
     private Time timeEnd;
     private String source;
     private byte[] image;
@@ -54,7 +62,7 @@ public class EventEntity {
 
 
 
-
+    @Valid
     private Set<ClientEntity> clients = new HashSet<>();
 
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
@@ -93,26 +101,6 @@ public class EventEntity {
     public void setName(String name) {
         this.name = name;
     }
-//
-//    @Basic
-//    @Column(name = "place_id", nullable = true)
-//    public Integer getPlaceId() {
-//        return placeId;
-//    }
-//
-//    public void setPlaceId(Integer placeId) {
-//        this.placeId = placeId;
-//    }
-
-//    @Basic
-//    @Column(name = "user_id", nullable = true)
-//    public Integer getUserId() {
-//        return userId;
-//    }
-//
-//    public void setUserId(Integer userId) {
-//        this.userId = userId;
-//    }
 
     @Basic
     @Column(name = "timeBegin", nullable = false)
@@ -244,56 +232,4 @@ public class EventEntity {
         this.finalPayment = finalPayment;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        EventEntity that = (EventEntity) o;
-        return id == that.id &&
-                Objects.equals(name, that.name) &&
-                Objects.equals(timeBegin, that.timeBegin) &&
-                Objects.equals(timeEnd, that.timeEnd) &&
-                Objects.equals(source, that.source) &&
-                Arrays.equals(image, that.image) &&
-                Objects.equals(description, that.description) &&
-                Objects.equals(rating, that.rating) &&
-                Objects.equals(voteCount, that.voteCount) &&
-                Arrays.equals(content, that.content) &&
-                Objects.equals(date, that.date) &&
-                Objects.equals(totalAmount, that.totalAmount) &&
-                Objects.equals(prepayment, that.prepayment) &&
-                Objects.equals(paymentAtEvent, that.paymentAtEvent) &&
-                Objects.equals(finalPayment, that.finalPayment);
-    }
-
-    @Override
-    public int hashCode() {
-
-        int result = Objects.hash(id, name,   timeBegin, timeEnd, source, description, rating, voteCount, date, totalAmount, prepayment, paymentAtEvent, finalPayment);
-        result = 31 * result + Arrays.hashCode(image);
-        result = 31 * result + Arrays.hashCode(content);
-        return result;
-    }
-
-    @Override
-    public String toString() {
-        return "EventEntity{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", timeBegin=" + timeBegin +
-                ", timeEnd=" + timeEnd +
-                ", source='" + source + '\'' +
-                ", description='" + description + '\'' +
-                ", rating=" + rating +
-                ", voteCount='" + voteCount + '\'' +
-                ", date=" + date +
-                ", totalAmount=" + totalAmount +
-                ", prepayment=" + prepayment +
-                ", paymentAtEvent=" + paymentAtEvent +
-                ", finalPayment=" + finalPayment +
-                ", genre=" + genre +
-                ", place=" + place +
-                ", clients=" + clients +
-                '}';
-    }
 }

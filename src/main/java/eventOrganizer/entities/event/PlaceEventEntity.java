@@ -1,14 +1,21 @@
 package eventOrganizer.entities.event;
 
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
+
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
+@EqualsAndHashCode
+@ToString
 @Entity
 @Table(name = "place_event", schema = "eventorganizer", catalog = "")
 public class PlaceEventEntity {
     private int id;
+    @NotNull(message = "address is not null")
     private String name;
     private String address;
     private String description;
@@ -63,20 +70,4 @@ public class PlaceEventEntity {
         this.description = description;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        PlaceEventEntity that = (PlaceEventEntity) o;
-        return id == that.id &&
-                Objects.equals(name, that.name) &&
-                Objects.equals(address, that.address) &&
-                Objects.equals(description, that.description);
-    }
-
-    @Override
-    public int hashCode() {
-
-        return Objects.hash(id, name, address, description);
-    }
 }

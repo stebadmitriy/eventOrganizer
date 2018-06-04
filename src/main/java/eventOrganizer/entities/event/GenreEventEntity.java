@@ -1,10 +1,15 @@
 package eventOrganizer.entities.event;
 
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
+
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
+
+@ToString
 @Entity
 @Table(name = "genre_event", schema = "eventorganizer", catalog = "")
 public class GenreEventEntity {
@@ -60,19 +65,5 @@ public class GenreEventEntity {
         GenreEventEntity that = (GenreEventEntity) o;
         return Objects.equals(genreId, that.genreId) &&
                 Objects.equals(genreName, that.genreName);
-    }
-
-    @Override
-    public int hashCode() {
-
-        return Objects.hash(genreId, genreName);
-    }
-
-    @Override
-    public String toString() {
-        return "GenreEventEntity{" +
-                "genreId='" + genreId + '\'' +
-                ", genreName='" + genreName + '\'' +
-                '}';
     }
 }

@@ -1,15 +1,25 @@
 package eventOrganizer.entities.event;
 
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
+
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
 import java.util.Objects;
 
+@EqualsAndHashCode
+@ToString
 @Entity
 @Table(name = "user", schema = "eventorganizer", catalog = "")
 public class UserEntity {
     private int id;
+    @NotEmpty
     private String username;
+    @NotEmpty
     private String password;
+    @NotEmpty
     private String firstname;
+    @NotEmpty
     private String surname;
 
     @Id
@@ -60,23 +70,5 @@ public class UserEntity {
 
     public void setSurname(String surname) {
         this.surname = surname;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        UserEntity that = (UserEntity) o;
-        return id == that.id &&
-                Objects.equals(username, that.username) &&
-                Objects.equals(password, that.password) &&
-                Objects.equals(firstname, that.firstname) &&
-                Objects.equals(surname, that.surname);
-    }
-
-    @Override
-    public int hashCode() {
-
-        return Objects.hash(id, username, password, firstname, surname);
     }
 }

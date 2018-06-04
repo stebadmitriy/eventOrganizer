@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface EventServiceDAO {
     List<EventEntity> getEvents();
+    EventEntity getEvent(Integer id);
 }
+

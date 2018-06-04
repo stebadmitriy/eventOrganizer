@@ -11,6 +11,7 @@
     <title>Title</title>
 </head>
 <body>
-Error
+!!!
+${exceptionMsg}
 </body>
 </html>

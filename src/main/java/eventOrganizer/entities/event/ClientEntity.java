@@ -1,16 +1,25 @@
 package eventOrganizer.entities.event;
 
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
+
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
 import java.sql.Date;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
+@EqualsAndHashCode
+@ToString
 @Entity
 @Table(name = "client", schema = "eventorganizer", catalog = "")
 public class ClientEntity {
     private int id;
+    @NotEmpty
     private String firstName;
+    @NotEmpty
     private String surname;
     private Date dateOfBirth;
     private String phone;
@@ -101,23 +110,4 @@ public class ClientEntity {
         this.getLinkToProfileFaceBook = getLinkToProfileFaceBook;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        ClientEntity that = (ClientEntity) o;
-        return id == that.id &&
-                Objects.equals(firstName, that.firstName) &&
-                Objects.equals(surname, that.surname) &&
-                Objects.equals(dateOfBirth, that.dateOfBirth) &&
-                Objects.equals(phone, that.phone) &&
-                Objects.equals(linkToProfileVk, that.linkToProfileVk) &&
-                Objects.equals(getLinkToProfileFaceBook, that.getLinkToProfileFaceBook);
-    }
-
-    @Override
-    public int hashCode() {
-
-        return Objects.hash(id, firstName, surname, dateOfBirth, phone, linkToProfileVk, getLinkToProfileFaceBook);
-    }
 }
